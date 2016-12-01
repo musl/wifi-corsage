@@ -1,0 +1,57 @@
+<!doctype html!>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<title>gatsby</title>
+
+		<meta name="author" content="Michael Hix" />
+		<meta name="copyright" content="Copyright 2016 Michael Hix" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="pragma" content="no-cache" />
+
+		<link rel="stylesheet" href="/css/lib/pure-min.css" type="text/css" media="screen" charset="utf-8">
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="/css/lib/grids-responsive-old-ie-min.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="/css/lib/grids-responsive-min.css">
+		<!--<![endif]-->
+		<link rel="stylesheet" href="/css/lib/font-awesome.min.css" type="text/css" media="screen" charset="utf-8">
+
+		<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" charset="utf-8">
+
+		<script type="text/javascript" charset="utf-8" src="/js/lib/jquery-3.1.1.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/js/lib/ractive.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/js/app.js"></script>
+
+		<script id='gatsby-tmpl' type='text/ractive'>
+			<p>Gatsby is {{status}}</p>
+			<form class="pure-form pure-form-stacked">
+      	<div class="pure-g">
+        	<div class="pure-u-1 pure-u-md-1-3">
+						<input type="text" value="{{code}}" class="">
+					</div>
+        	<div class="pure-u-1 pure-u-md-1-3">
+						<input type="button" class="pure-button" value="stop" on-click="stop">
+						<input type="button" class="pure-button" value="pulse" on-click="pulse">
+						<input type="button" class="pure-button" value="spaz" on-click="spaz">
+					</div>
+				</div>
+			</form>
+		</script>
+
+	</head>
+	<body>
+		<div class="pure-g">
+			<div class="pure-u-1-4"></div>
+			<div class="pure-u-1-2">
+				<div id="gatsby"></div>
+			</div>
+			<div class="pure-u-1-4"></div>
+		</div>
+	</body>
+</html>
